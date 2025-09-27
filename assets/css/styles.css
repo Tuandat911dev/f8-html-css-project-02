@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fffcf4;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 2000px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ========= Common ============= */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ========= Navbar ============= */
+.header-fixed {
+    background: var(--primary-color);
+    padding-top: 24px;
+    position: sticky;
+    top: -24px;
+}
+
+.header-fixed .body {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.header-fixed .nav {
+    margin-left: 512px;
+    display: flex;
+}
+
+.header-fixed ul {
+    display: flex;
+    gap: 42px;
+    align-items: center;
+}
+
+.header-fixed a {
+    text-decoration: none;
+    color: #5f5b53;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.header-fixed a:hover:not(li.active a) {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.header-fixed li.active {
+    position: relative;
+}
+
+.header-fixed li.active a {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+}
+
+.header-fixed li.active a::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    left: 0.25px;
+    bottom: -3px;
+}
+
+.header-fixed .action {
+    margin-left: 49px;
+}
+
+.header-fixed .sign-up-btn {
+    padding: 11px 41px;
+    border-radius: 24.5px;
+    background: #171100;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
