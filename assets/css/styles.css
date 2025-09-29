@@ -281,3 +281,60 @@ html {
     font-weight: 700;
     line-height: 1.27;
 }
+
+/* ============ Popular course ============== */
+.popular-course {
+    margin-top: 200px;
+}
+
+.popular-course .popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-course .popular-top .title {
+    color: #171100;
+    font-family: var(--font-sen);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.076rem;
+}
+
+.popular-course .popular-top .desc {
+    width: 458px;
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.popular-course .popular-top .control {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-course .popular-top .btn-control {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #ffb900;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+.popular-course .popular-top .btn-control:hover {
+    background: #ffb900;
+}
+
+.popular-course .popular-top .btn-control svg path {
+    stroke: #ffb900;
+    transition: 0.3s ease;
+}
+
+.popular-course .popular-top .btn-control:hover svg path {
+    stroke: #fff;
+}
