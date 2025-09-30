@@ -734,3 +734,95 @@ html {
 .blogs .paginate-item.active {
     background: #ffb900;
 }
+
+/* =========== Footer ============= */
+.footer {
+    padding: 96px 135px 28px;
+    background: #2e2100;
+}
+
+.footer .body {
+    display: flex;
+    gap: 130px;
+    flex-shrink: 0;
+}
+
+.footer .column:first-child {
+    padding-right: 15px;
+}
+
+.footer .column:last-child a {
+    text-wrap: wrap;
+}
+
+.footer .column .slogan {
+    width: 267px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    margin-top: 18px;
+}
+
+.footer .column .social-media {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer .column .title {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer .column .divider {
+    content: "";
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+    margin-top: 14px;
+}
+
+.footer .column .list {
+    margin-top: 28px;
+}
+
+.footer .column li a {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    text-wrap: nowrap;
+    text-decoration: none;
+    max-width: 231px;
+}
+
+.footer .column li + li {
+    margin-top: 12px;
+}
+
+.footer .column a strong {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+.footer .divider {
+    width: 1170px;
+    height: 1px;
+    background: #59554b;
+    margin-top: 38px;
+}
+
+.footer .copyright {
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    margin-top: 28px;
+}
