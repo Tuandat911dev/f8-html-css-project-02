@@ -11,7 +11,6 @@
 html,
 body {
     scroll-behavior: smooth;
-    height: 3000px;
     font-family: var(--font-poppins);
 }
 
@@ -602,4 +601,136 @@ html {
 
 .features .feature-bottom .desc {
     width: 570px;
+}
+
+/* ============ Blogs ============= */
+.blogs {
+    margin-top: 200px;
+    padding: 96px 135px;
+    background: #fffcf4;
+}
+
+.blogs .title {
+    color: #130606;
+    text-align: center;
+    font-family: var(--font-sen);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.076rem;
+}
+
+.blogs .desc {
+    width: 448px;
+    margin-top: 16px;
+    color: #696262;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blogs .blogs-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.blogs .card {
+    width: 370px;
+    border-radius: 16px;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+.blogs .card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.blogs .card .img-blog {
+    width: 370px;
+    height: 250px;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+}
+
+.blogs .blogs-list .blog-info {
+    padding: 20px;
+}
+
+.blogs .blogs-list .date {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.blogs .blogs-list .date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #ffb900;
+    border-radius: 50%;
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+.blogs .card .divider {
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+    margin-top: 12px;
+}
+
+.blogs .card .blog-title {
+    width: 330px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-top: 12px;
+}
+
+.blogs .card .btn-read {
+    width: 118px;
+    height: 50px;
+    border-radius: 25px;
+    background: #171100;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 12px;
+    transition: 0.3s ease;
+}
+
+.blogs .card .btn-read:hover {
+    background: #ffb900;
+}
+
+.blogs .paginate {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.blogs .paginate-item {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #5f5b53;
+}
+
+.blogs .paginate-item.active {
+    background: #ffb900;
 }
